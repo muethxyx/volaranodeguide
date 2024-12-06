@@ -25,7 +25,13 @@ sudo apt install -y docker-ce docker-ce-cli containerd.io
 
 [ -f "volara.sh" ] && rm volara.sh; curl -s -o volara.sh https://raw.githubusercontent.com/volaradlp/minercli/refs/heads/main/run_docker.sh && chmod +x volara.sh && ./volara.sh
 
-export VANA_PRIVATE_KEY=<your_private_key>
+` 
+export VANA_PRIVATE_KEY=0xxxxx
+
 docker pull volara/miner
+
 docker run -it -e VANA_PRIVATE_KEY=${VANA_PRIVATE_KEY} volara/miner
+
+
+`
 
