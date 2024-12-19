@@ -22,6 +22,9 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docke
 
 sudo apt update
 sudo apt install -y docker-ce docker-ce-cli containerd.io
+```yaml
+screen -S volara
+```
 
 [ -f "volara.sh" ] && rm volara.sh; curl -s -o volara.sh https://raw.githubusercontent.com/volaradlp/minercli/refs/heads/main/run_docker.sh && chmod +x volara.sh && ./volara.sh
 ```
